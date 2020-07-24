@@ -1,13 +1,23 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="Maven_Jenkins_Project:war exploded">
-    <output-path>$PROJECT_DIR$/out/artifacts/Maven_Jenkins_Project_war_exploded</output-path>
+    <output-path>$PROJECT_DIR$/target/Maven_Jenkins_Project-1.0</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>Maven_Jenkins_Project</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
     <root id="root">
-      <element id="javaee-facet-resources" facet="Maven_Jenkins_Project/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="Maven_Jenkins_Project" />
         </element>
       </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/Maven_Jenkins_Project-1.0/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="Maven_Jenkins_Project/web/Web" />
     </root>
   </artifact>
 </component>
